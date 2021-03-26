@@ -3,15 +3,15 @@ agent any
 stages{
 stage('Compile'){
 steps {echo "Compiling the code......"
-bat "mvn clean compile"}
+}
 }
 
 stage('Test'){
 steps {echo "Testing the code......"
-bat "mvn test"}
+}
 }
 stage('Deploy'){
 steps {echo "Building the code......"
-bat "mvn deploy"}
+}
 }
 }}
